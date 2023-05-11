@@ -1,0 +1,33 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --ghostWhite: rgb(245, 244, 250);
+  --grey: rgb(117, 117, 117);
+  --blackRock: rgb(47, 48, 58);
+  --nero: rgb(33, 33, 33);
+  --black: rgb(0, 0, 0);
+  --dodgerBlue: rgb(33, 150, 243);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+ul,
+menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li,
+figure {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+}
+
+.blue {
+  color: var(--dodgerBlue);
+}
