@@ -10,6 +10,7 @@
 
 body {
   max-width: 1600px;
+  min-width: 360px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -24,7 +25,31 @@ header {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
+  padding-inline: 100px;
+}
+
+#header-logo {
+  font: bold 26px "Raleway", sans-serif;
+  color: var(--black);
+}
+
+#bluepart-logo {
+  color: var(--dodgerBlue);
+}
+
+ul,
+menu {
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  display: inline-flex;
   padding-inline: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav a {
@@ -39,10 +64,12 @@ nav a:hover,
 menu a:hover {
   color: var(--dodgerBlue);
 }
+
 main {
   display: flex;
   flex-direction: column;
 }
+
 h1 {
   color: var(--white);
   font-size: 44px;
@@ -59,7 +86,7 @@ h2 {
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 1.5px;
-  padding: 80px 0 50px 0;
+  padding-top: 80px;
   margin: 0;
 }
 
@@ -71,7 +98,7 @@ h3 {
   letter-spacing: 1px;
 }
 
-.title {
+#header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,56 +122,43 @@ button {
   box-shadow: 4px 4px rgb(0 0 0 /0.15);
   cursor: pointer;
 }
+
+#occupation {
+  padding-bottom: 80px;
+}
+
+#strengths-list,
+#occupation-photo,
+#team-photo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0 0 0;
+}
+
+#strengths-list li,
+#occupation-photo li,
+#team-photo li {
+  padding: 15px;
+}
+
 article {
   width: 270px;
   color: var(--grey);
   line-height: 24px;
   letter-spacing: 0.3px;
   text-align: left;
-  padding-top: 80px;
-}
-.strengths {
-  display: flex;
-  justify-content: center;
 }
 
-.occupation {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 80px;
+.dev-tools {
+  max-width: 370px;
+  max-height: 294px;
 }
-.team {
+
+#team {
   background: var(--ghostWhite);
   padding-bottom: 80px;
-}
-.team-photo {
-  display: flex;
-  justify-content: center;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--white);
-  background: var(--blackRock);
-  height: 252px;
-  padding-inline: 20px;
-}
-address {
-  font-style: normal;
-}
-
-address a {
-  color: var(--white);
-  opacity: 0.6;
-  line-height: 24px;
-}
-ul,
-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
 }
 
 figure {
@@ -157,28 +171,6 @@ figure {
   box-shadow: 0 2px rgb(0 0 0 /0.2);
 }
 
-li {
-  display: inline-block;
-  padding: 15px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header-logo {
-  font: bold 26px "Raleway", sans-serif;
-  color: var(--black);
-}
-
-.footer-logo {
-  font: bold 26px "Raleway", sans-serif;
-  color: var(--white);
-}
-
-.blue {
-  color: var(--dodgerBlue);
-}
 .employee {
   font-size: 16px;
   font-weight: 500;
@@ -189,6 +181,7 @@ a {
   margin-bottom: 10px;
   color: var(--nero);
 }
+
 .position {
   font-size: 16px;
   font-weight: 400;
@@ -197,4 +190,29 @@ a {
   text-align: center;
   margin: 0;
   color: var(--grey);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  background: var(--blackRock);
+  height: 252px;
+  padding-inline: 100px;
+}
+
+#footer-logo {
+  font: bold 26px "Raleway", sans-serif;
+  color: var(--white);
+}
+
+address {
+  font-style: normal;
+}
+
+address a {
+  color: var(--white);
+  opacity: 0.6;
+  line-height: 24px;
 }
