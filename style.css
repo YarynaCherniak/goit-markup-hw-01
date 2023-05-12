@@ -51,7 +51,7 @@ header {
   color: var(--black);
 }
 
-#bluepart-logo {
+.bluepart-logo {
   color: var(--dodgerBlue);
 }
 
