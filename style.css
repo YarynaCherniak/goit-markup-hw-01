@@ -13,7 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  margin: 0;
+  margin: auto;
 }
 
 header {
@@ -23,6 +23,7 @@ header {
   height: 80px;
   font-size: 14px;
   font-weight: 500;
+  letter-spacing: 1px;
   padding-inline: 20px;
 }
 
@@ -38,7 +39,10 @@ nav a:hover,
 menu a:hover {
   color: var(--dodgerBlue);
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+}
 h1 {
   color: var(--white);
   font-size: 44px;
@@ -55,8 +59,16 @@ h2 {
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 1.5px;
-  padding: 100px 0 50px 0;
+  padding: 80px 0 50px 0;
   margin: 0;
+}
+
+h3 {
+  color: var(--nero);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1px;
 }
 
 .title {
@@ -81,19 +93,42 @@ button {
   border: none;
   border-radius: 4px;
   box-shadow: 4px 4px rgb(0 0 0 /0.15);
+  cursor: pointer;
+}
+article {
+  width: 270px;
+  color: var(--grey);
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  padding-top: 80px;
+}
+.strengths {
+  display: flex;
+  justify-content: center;
 }
 
+.occupation {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
 .team {
   background: var(--ghostWhite);
+  padding-bottom: 80px;
+}
+.team-photo {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 252px;
   color: var(--white);
   background: var(--blackRock);
+  height: 252px;
   padding-inline: 20px;
 }
 address {
@@ -112,9 +147,19 @@ menu {
   padding: 0;
 }
 
+figure {
+  height: 368px;
+  background: var(--white);
+  margin: 0;
+  border: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 2px rgb(0 0 0 /0.2);
+}
+
 li {
   display: inline-block;
-  margin: 5px 10px;
+  padding: 15px;
 }
 
 a {
@@ -133,4 +178,23 @@ a {
 
 .blue {
   color: var(--dodgerBlue);
+}
+.employee {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: var(--nero);
+}
+.position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0;
+  color: var(--grey);
 }
