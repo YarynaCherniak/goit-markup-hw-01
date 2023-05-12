@@ -8,6 +8,24 @@
   --dodgerBlue: rgb(33 150 243);
 }
 
+@media (min-width: 641px) {
+  li.icon {
+    display: none;
+  }
+  li.text {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 640px) {
+  li.icon {
+    display: inline-block;
+  }
+  li.text {
+    display: none;
+  }
+}
+
 body {
   max-width: 1600px;
   min-width: 360px;
@@ -25,7 +43,7 @@ header {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
-  padding-inline: 100px;
+  padding-left: 20px;
 }
 
 #header-logo {
@@ -41,11 +59,17 @@ ul,
 menu {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 li {
   display: inline-flex;
-  padding-inline: 20px;
+  padding-left: 40px;
+}
+
+.icon,
+.text {
+  padding: 0 20px 0 0;
 }
 
 a {
@@ -199,7 +223,7 @@ footer {
   color: var(--white);
   background: var(--blackRock);
   height: 252px;
-  padding-inline: 100px;
+  padding-left: 100px;
 }
 
 #footer-logo {
