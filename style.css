@@ -1,32 +1,80 @@
 :root {
-  --white: rgb(255, 255, 255);
-  --ghostWhite: rgb(245, 244, 250);
-  --grey: rgb(117, 117, 117);
-  --blackRock: rgb(47, 48, 58);
-  --nero: rgb(33, 33, 33);
-  --black: rgb(0, 0, 0);
-  --dodgerBlue: rgb(33, 150, 243);
+  --white: rgb(255 255 255);
+  --ghostWhite: rgb(245 244 250);
+  --grey: rgb(117 117 117);
+  --blackRock: rgb(47 48 58);
+  --nero: rgb(33 33 33);
+  --black: rgb(0 0 0);
+  --dodgerBlue: rgb(33 150 243);
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   max-width: 1600px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-inline: 20px;
+}
+
+nav a {
+  color: var(--nero);
+}
+
+menu a {
+  color: var(--grey);
+}
+
+nav a:hover,
+menu a:hover {
+  color: var(--dodgerBlue);
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 200px;
+}
+
+.title {
+  color: var(--white);
+  background: var(--blackRock);
+  height: 600px;
+}
+
+footer {
+  height: 252px;
+  color: var(--white);
+  background: var(--blackRock);
+}
+
 ul,
 menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-li,
-figure {
+
+li {
   display: inline-block;
+  margin: 5px 10px;
 }
+
 a {
   text-decoration: none;
 }
+
 .logo {
-  font-family: "Raleway", sans-serif;
+  font: bold 26px "Raleway", sans-serif;
+  color: var(--black);
 }
 
 .blue {
